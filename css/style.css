@@ -1,0 +1,853 @@
+/* HEADER */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #fdf2e9; */
+  height: 9.6rem;
+  padding: 0 4.8rem;
+  /* position: relative; */
+}
+
+#logo {
+}
+
+/* footer product and services */
+.footer-container {
+  padding: 5rem;
+  padding-top: 0px;
+}
+
+/* responsive product and services  */
+
+/* NAVIGATION */
+
+/* Styles for the main navigation list */
+.main_nav_list {
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+  list-style: none;
+}
+
+/* Styles for the main navigation links */
+.main_nav_link:link,
+.main_nav_link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+/* Styles when hovering over or clicking on the navigation links */
+.main_nav_link:hover,
+.main_nav_link:active {
+  color: #f3a847;
+}
+
+/* Styles when hovering over or clicking on the navigation links with class "btn" */
+.main_nav_link.btn:link,
+.main_nav_link.btn:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #e6a32d;
+}
+
+.main_nav_link.btn:hover,
+.main_nav_link.btn:active {
+  background-color: #f3a847;
+}
+
+/* Styles for the "span" elements */
+span {
+  color: #e6a32d;
+}
+
+/* Styles for the mobile navigation icon with name "close-outline" */
+.mobile_nav_icon[name="close-outline"] {
+  display: none;
+}
+
+/* Styles for the mobile navigation button */
+.mobile_nav_btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+/* Styles for the mobile navigation icon */
+.mobile_nav_icon {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+/* Styles for the main section */
+.main_section {
+  background-color: #fdf2e9;
+  padding: 4.8rem 3.5rem 9.6rem 3.5rem;
+}
+
+/* Styles for the primary heading in the main section */
+.primary_heading {
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  color: #333;
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-top: 2.5rem;
+  margin-bottom: 3.2rem;
+}
+
+/* Styles for the secondary heading in the main section */
+.secondary_heading {
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: #333;
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+  text-align: center;
+}
+
+/* Styles for the section container */
+.sec {
+  font-size: 2rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+/* Styles for the section description in the main section */
+.section_description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+  text-align: justify;
+}
+
+/* Styles for "Start Book" button */
+.btn_start_book:link,
+.btn_start_book:visited {
+  background-color: #e6a32d;
+  color: #fff;
+  margin-right: 1rem;
+}
+
+/* Styles when hovering over or clicking on the button "Start Book" button */
+.btn_start_book:hover,
+.btn_start_book:active {
+  background-color: #f3a847;
+}
+
+/* Styles for the "Learn More" button in the main section */
+.btn_learn_more:link,
+.btn_learn_more:visited {
+  background-color: #fff;
+  color: #555;
+}
+
+/* Styles when hovering over or clicking on the "Learn More" button */
+.btn_learn_more:hover,
+.btn_learn_more:active {
+  background-color: #fdf2e9;
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+/* Styling for the section images */
+.sec_image {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+/* Styling for the "rented_cars" section */
+.rented_cars {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-top: 8rem;
+}
+
+/* Styling for the customer images */
+.customers_imgs {
+  display: flex;
+}
+
+/* Styling for individual customer images */
+.customers_imgs img {
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 50%;
+  margin-right: -1.6rem;
+  border: 3px solid #fdf2e9;
+}
+
+/* Adjusting the last customer image's margin to prevent right spacing */
+.customers_imgs img:last-child {
+  margin: 0;
+}
+
+/* Styling for the "rented_text" section */
+.rented_text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/* Styling for the "span" elements inside the "rented-text" class */
+.rented-text span {
+  color: #e6a32d;
+  font-weight: 700;
+}
+
+/* Styling for the "feature_section" section */
+.feature_section {
+  /* padding: 9.6rem 0; */
+  padding: 7rem 0;
+  text-align: center;
+}
+
+/* Styling for the "feature" class (card-like section) */
+.feature {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #fdf2e9;
+  box-shadow: 0px 5px 20px 0px rgba(33, 53, 89, 0.14);
+  border-radius: 10px;
+  background-color: white;
+  padding: 15px;
+}
+
+/* Styling for the "about-feature" class (another card-like section) */
+.about-feature {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #fdf2e9;
+  box-shadow: 0px 5px 20px 0px rgba(33, 53, 89, 0.14);
+  border-radius: 10px;
+  background-color: white;
+}
+
+/* Styling for the caption of images in the "feature" section */
+.image-caption {
+  padding: 15px;
+}
+
+/* Styling for the feature icon */
+.feature_icon {
+  color: #e6a32d;
+  height: 3.2rem;
+  width: 3.2rem;
+  background-color: #fdf2e9;
+  margin-bottom: 3.2rem;
+  padding: 1.6rem;
+  border-radius: 50%;
+}
+
+/* Styling for the title of features in the "feature" section */
+.feature_title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+/* Styling for the text of features in the "feature" section */
+.feature_text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  text-align: justify;
+  padding: 15px;
+}
+
+/* Styling for the "table" section */
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+/* Styling for table rows */
+table tr {
+  background-color: #fdf2e9;
+  border: 1px solid #ddd;
+  padding: 0.35em;
+}
+
+/* Styling for table headers and table data cells */
+table th,
+table td {
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Styling for table headers */
+table th {
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* Styling for the table body (content) */
+tbody {
+  font-size: 1.2rem;
+}
+
+/* packages section */
+.section_package {
+  padding-top: 4.5rem;
+}
+
+/* Styling for the package plan */
+.package_plan {
+  border-radius: 11px;
+  width: 75%;
+}
+
+.package-container {
+  background-color: #fdf2e9;
+  padding: 10rem;
+}
+
+.package_plan_starter {
+  background-color: white;
+  justify-self: end;
+  border: 2px solid white;
+  padding: 4.6rem;
+}
+
+.package_plan_premium {
+  background-color: white;
+  padding: 4.8rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Styling for the pseudo-element (::after) in "package_plan_premium" */
+.package_plan_premium::after {
+  content: "Best value";
+  position: absolute;
+  top: 6%;
+  right: -18%;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+  background-color: #a0a4f8;
+  padding: 0.8rem 8rem;
+  transform: rotate(45deg);
+}
+
+.package_header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+
+.package_name {
+  color: #e6a32d;
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75;
+  margin-bottom: 3.2rem;
+}
+
+.package_price {
+  font-size: 6.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+
+.package_price span {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+
+.package_text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #6f6f6f;
+}
+
+.rent_now {
+  text-align: center;
+  margin-top: 4.8rem;
+}
+
+.checklist {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.checklist_item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  line-height: 1.2;
+}
+
+.checklist_icon {
+  width: 3rem;
+  height: 3rem;
+  color: #e6a32d;
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
+/* FOOTER */
+
+.footer {
+  padding: 12.8rem 0;
+  border-top: 1px solid #fdf2e9;
+}
+
+/* Grid layout for footer */
+.grid_footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+/* Styling for the logo column in the footer */
+.logo_col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styling for the logo in the footer */
+.logo {
+  height: 3.2rem;
+  margin-top: -0.5rem;
+  width: 14rem;
+}
+
+/* Styling for the footer logo */
+.footer_logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+
+/* Styling for the social links in the footer */
+.social_links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+/* Styling for social icons in the footer */
+.social_icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+/* Styling for the copyright text in the footer */
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #767676;
+  margin-top: auto;
+}
+
+/* Styling for the footer heading */
+.footer_heading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 4rem;
+}
+
+/* Styling for the contact information in the footer */
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+/* Styling for the address in the footer */
+.address {
+  margin-bottom: 2.4rem;
+}
+
+/* Styling for the footer navigation links */
+.footer_nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+/* Styling for the footer navigation links (anchor elements) */
+.footer_link:link,
+.footer_link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+/* Styles when hovering over or clicking on the footer navigation links */
+.footer_link:hover,
+.footer_link:active {
+  color: #f3a847;
+}
+
+/* about us css : Done by Nissy */
+.about {
+  display: flex;
+  justify-content: space-around;
+}
+
+.about-us {
+  padding: 50px 0;
+  background: #fdf2e9;
+  position: relative;
+}
+
+.data {
+  margin-top: 30px;
+}
+
+.text {
+  /* width: 540px; */
+  text-align: center;
+}
+
+.text h2 {
+  font-size: 70px;
+  margin-bottom: 10px;
+  letter-spacing: 1rem;
+}
+
+.text h5 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  letter-spacing: 4px;
+}
+
+.text p {
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  padding: 0 31rem;
+}
+
+/* team */
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.team .team_member {
+  background: #fdf2e9;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 300px;
+  flex: 1 1 300px;
+  /* Allow the team members to grow, but not exceed 300px */
+}
+
+.team .team_member .team_img {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 20px;
+}
+
+.team .team_member h3 {
+  color: #333;
+  font-size: 26px;
+}
+
+.team .team_member p.role {
+  margin: 12px 0;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.wrapper h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 30px;
+  color: #e6a32d;
+}
+
+.about-header {
+  font-size: 3.5rem;
+  letter-spacing: 2px;
+  padding-bottom: 20px;
+  margin-top: -20px;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* grid columns */
+
+.card-img {
+  width: 100%;
+  height: 294px;
+}
+
+/*contact us and FAQs KALGI KANSARA*/
+
+/* Styles for the contact container */
+.contact-container {
+  background-color: #fdf2e9;
+  padding: 1rem;
+  margin-bottom: 5rem;
+}
+
+/* Styles for the main container */
+.containerr {
+  max-width: 1100px;
+  width: 100%;
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px 60px 30px 40px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  margin: 40px auto;
+}
+
+/* Styles for the content inside the container */
+.containerr .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Styles for the left-side column in the content */
+.containerr .content .left-side {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+}
+
+/* Pseudo-element before the left-side content */
+.content .left-side::before {
+  content: "";
+  position: absolute;
+  height: 70%;
+  width: 2px;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #afafb6;
+}
+
+/* Styles for the details section in the left-side column */
+.content .left-side .details {
+  margin: 14px;
+  text-align: center;
+}
+
+/* Styles for the icons in the left-side column */
+.content .left-side .details i {
+  font-size: 30px;
+  color: #e6a32d;
+  margin-bottom: 10px;
+}
+
+/* Styles for the topic in the left-side column */
+.content .left-side .details .topic {
+  font-size: 18px;
+  font-weight: 500;
+  color: #e6a32d;
+}
+
+/* Styles for text-one and text-two in the left-side column */
+.content .left-side .details .text-one,
+.content .left-side .details .text-two {
+  font-size: 14px;
+  color: #afafb6;
+}
+
+/* Styles for the right-side column in the content */
+.containerr .content .right-side {
+  width: 75%;
+  margin-left: 75px;
+}
+
+/* Styles for the topic-text in the right-side column */
+.content .right-side .topic-text {
+  font-size: 23px;
+  font-weight: 600;
+  color: #e6a32d;
+}
+
+/* Styles for the input boxes in the right-side column */
+.right-side .input-box {
+  height: 55px;
+  width: 100%;
+  margin: 12px 0;
+}
+
+/* Styles for the input elements in the input boxes */
+.right-side .input-box input,
+.right-side .input-box textarea {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #fdf2e9;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+}
+
+/* Styles for the message-box in the right-side column */
+.right-side .message-box {
+  min-height: 110px;
+}
+
+/* Styles for the textarea in the message-box */
+.right-side .input-box textarea {
+  padding-top: 6px;
+}
+
+/* Styles for the button in the right-side column */
+.right-side .button {
+  display: inline-block;
+  margin-top: 12px;
+}
+
+/* Styles for the sendnow button */
+.right-side .sendnow {
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #e6a32d;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect for the sendnow button */
+.button input[type="button"]:hover {
+  background: #e6a32d;
+}
+
+/* Styles for the topic-text-locate */
+.topic-text-locate {
+  font-size: 23px;
+  font-weight: 600;
+  color: #e6a32d;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Styles for the operating text */
+.operating {
+  color: #e6a32d;
+  font-size: 20px;
+  font-weight: 400;
+  padding-top: 10px;
+}
+
+/* Styles for flex items */
+.flex-items {
+  display: flex;
+}
+
+/* Styles for the left image in FAQ page */
+.faq-left-img {
+  width: 50%;
+}
+
+/* Styles for the FAQ container */
+.faq-container {
+  background-color: #fdf2e9;
+  padding: 1rem;
+  margin-bottom: 5rem;
+}
+
+/* Styles for the FAQ text */
+.faqs-text {
+  font-size: 23px;
+  font-weight: 600;
+  color: #e6a32d;
+  text-align: center;
+}
+
+/* Styles for the FAQ paragraphs */
+.faqs-p {
+  padding: 10px;
+  background-color: lightgray;
+  font-weight: 400;
+  font-size: 15px;
+  width: 30%;
+  border-radius: 5px;
+  margin: 20px 10px;
+}
+
+/* Styles for the main heading */
+.main-heading {
+  font-size: 20px;
+  font-weight: 500;
+  color: #e6a32d;
+  text-align: left;
+  padding-top: 10px;
+}
+
+/* Styles for the sub-heading */
+.sub-heading {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left;
+  padding-top: 20px;
+  color: black;
+}
+
+/* Styles for sub-heading2 */
+.sub-heading2 {
+  padding-top: 12px;
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+
+/* Styles for steps list */
+.steps {
+  padding-left: 5em;
+  padding-top: 1em;
+  font-size: 15px;
+}
+
+/* Styles for list items in steps */
+.steps li {
+  padding: 5px;
+}

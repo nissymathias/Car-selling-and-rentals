@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta tags for character set and viewport -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Link to the favicon (website icon) -->
+  <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+
+  <!-- Preconnect links for using Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Link to the Roboto font from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- Links to different CSS files -->
+  <link rel="stylesheet" href="../css/general.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/queries.css" />
+
+  <!-- Script to load ionicons for modern browsers -->
+  <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+
+  <!-- Script to load ionicons for older browsers -->
+  <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+
+  <!-- Title of the web page -->
+  <title>WheelsOnRent</title>
+
+</head>
+
+<body>
+  <!-- Website header section -->
+  <header class="header">
+    <!-- Logo and navigation menu -->
+    <a href="#">
+      <img id="logo" src="../images/canva.png" alt="WheelsOnRent Logo">
+    </a>
+    <nav class="main_nav">
+      <ul class="main_nav_list">
+        <li><a href="index.html" class="main_nav_link">Home</a></li>
+        <li><a href="about.html" class="main_nav_link">About</a></li>
+        <li><a href="contact.html" class="main_nav_link">Contact</a></li>
+        <li><a href="offerings.html" class="main_nav_link">Offerings</a></li>
+        <li><a href="#" class="main_nav_link btn">Booking</a></li>
+      </ul>
+    </nav>
+    <!-- Mobile navigation button -->
+    <button class="mobile_nav_btn">
+      <ion-icon class="mobile_nav_icon" name="menu-outline"></ion-icon>
+      <ion-icon class="mobile_nav_icon" name="close-outline"></ion-icon>
+    </button>
+  </header>
+
+  <!-- Main content sections of the webpage -->
+  <main>
+    <section class="main_section">
+      <div class="sec">
+        <div class="sec_text_box">
+          <h1 class="primary_heading">
+            <span>D</span>rive Away Today!
+            <br>
+            Get behind the wheels of your car with <span>W</span>heelsOnRent.
+          </h1>
+          <br>
+          <p class="section_description">
+            <strong> Get Wheels, Go Anywhere!</strong>
+            Rent a car hassle-free with our service, no paperwork required, just book online and hit the road in style!
+          </p>
+          <a href="#" class="btn btn_start_book">Get Started</a>
+          <a href="#" class="btn btn_learn_more">Learn more &darr;</a>
+          <div class="rented_cars">
+            <div class="customers_imgs">
+              <img src="../images/customers/customer-1.jpg" alt="Customer photo" />
+              <img src="../images/customers/customer-2.jpg" alt="Customer photo" />
+              <img src="../images/customers/customer-3.jpg" alt="Customer photo" />
+              <img src="../images/customers/customer-4.jpg" alt="Customer photo" />
+              <img src="../images/customers/customer-5.jpg" alt="Customer photo" />
+              <img src="../images/customers/customer-6.jpg" alt="Customer photo" />
+              <img src="../images/customers/customer-7.jpg" alt="Customer photo" />
+            </div>
+            <p class="rented_text">
+              <span>470,000+</span> rented last year!
+            </p>
+          </div>
+        </div>
+        <div class="sec_img_box">
+          <img class="sec_image" src="../images/cars/cars.jpg" alt="cars in showroom">
+        </div>
+      </div>
+    </section>
+    <section class="feature_section">
+      <div class="center_text">
+        <h2 class="secondary_heading">
+          <span>E</span>xperience <span>T</span>he <span>D</span>ifference
+        </h2>
+      </div>
+      <div class="container grid grid--4-cols">
+        <div class="feature">
+          <ion-icon class="feature_icon" name="book-outline"></ion-icon>
+          <p class="feature_title">Integrated Book Keeping</p>
+          <p class="feature_text">
+            Automate your booking process and manage your rental process with ease
+            by keeping track of dates, times and places.
+          </p>
+        </div>
+        <div class="feature">
+          <ion-icon class="feature_icon" name="chatbox-ellipses-outline"></ion-icon>
+          <p class="feature_title">Excellent Customer Support</p>
+          <p class="feature_text">
+            Dedicated all time customer service committed to helping you book the
+            best car for your trip. Address you feedback promptly .
+          </p>
+        </div>
+        <div class="feature">
+          <ion-icon class="feature_icon" name="cash-outline"></ion-icon>
+          <p class="feature_title">Integrated Payment</p>
+          <p class="feature_text">
+            Book a service and make payment easily. Get automatically generated authentic
+            receipts and booking services in an instant.
+          </p>
+        </div>
+        <div class="feature">
+          <ion-icon class="feature_icon" name="phone-portrait-outline"></ion-icon>
+          <p class="feature_title">Easy Mobile Access</p>
+          <p class="feature_text">
+            Going on vacation? Just book a car you like, and hit the road using your phone on one go.
+            We provide excellent services for vacation days.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="center_text">
+        <h2 class="secondary_heading">
+          <span>C</span>ar <span>R</span>ental <span>I</span>nformation
+        </h2>
+      </div>
+
+      <!-- Table to display car rental information -->
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Car Model</th>
+            <th scope="col">Seating Capacity</th>
+            <th scope="col">Rental Price Per Day</th>
+            <th scope="col">Available Colors</th>
+            <th scope="col">Features</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Car Model">Hyundai Tucson</td>
+            <td data-label="Seating Capacity">3 Adults, 3 Bags</td>
+            <td data-label="Rental Price Per Day">$42 / day</td>
+            <td data-label="Available Colors">Red, Grey, Black</td>
+            <td data-label="Features">AC, Bluetooth, USB Port, Convertible</td>
+          </tr>
+          <tr>
+            <td data-label="Car Model">SUV</td>
+            <td data-label="Seating Capacity">5 Adults, 3 Bags</td>
+            <td data-label="Rental Price Per Day">$65 / day</td>
+            <td data-label="Available Colors">Grey, Black, White</td>
+            <td data-label="Features"> AC, Bluetooth, USB Port, All-Wheel Drive</td>
+          </tr>
+          <tr>
+            <td data-label="Car Model">Nikon Mini Van</td>
+            <td data-label="Seating Capacity">5 Adults, 5 Bags</td>
+            <td data-label="Rental Price Per Day">$95 / day</td>
+            <td data-label="Available Colors">Red, Blue, Brown</td>
+            <td data-label="Features"> AC, Bluetooth, USB Port, 4x4</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Section displaying car rental package plans -->
+    <section class="section_package" id="package">
+      <div class="container">
+        <h2 class="secondary_heading">
+          <span>C</span>heaper <span>P</span>ackages
+        </h2>
+      </div>
+
+      <div class="package-container grid grid--2-cols margin-bottom-md">
+        <div class="package_plan package_plan_starter">
+          <header class="package_header">
+            <p class="package_name">Basic</p>
+            <p class="package_price"><span>$</span>835</p>
+            <p class="package_text">per month. That's just $28 per day!</p>
+          </header>
+          <ul class="checklist">
+            <li class="checklist_item">
+              <ion-icon class="checklist_icon" name="checkmark-outline"></ion-icon>
+              <p>Automatic Transmission</p>
+            </li>
+            <li class="checklist_item">
+              <ion-icon class="checklist_icon" name="checkmark-outline"></ion-icon>
+              <p>Flexible Cancellation</p>
+            </li>
+            <li class="checklist_item">
+              <ion-icon class="checklist_icon" name="checkmark-outline"></ion-icon>
+              <p>No booking fees</p>
+            </li>
+            <li class="checklist_item">
+              <ion-icon class="checklist_icon" name="close-outline"></ion-icon>
+              <p>Taxes and fees exclusion</p>
+            </li>
+          </ul>
+          <div class="rent_now">
+            <a href="#" class="btn btn_start_book">Rent Now</a>
+          </div>
+        </div>
+
+        <div class="package_plan package_plan_premium">
+          <header class="package_header">
+            <p class="package_name">Premium</p>
+            <p class="package_price"><span>$</span>1200</p>
+            <p class="package_text">per month. That's just $40 per day!</p>
+          </header>
+          <ul class="checklist">
+            <li class="checklist_item">
+              <ion-icon class="checklist_icon" name="checkmark-outline"></ion-icon>
+              <p>Free Amendments</p>
+            </li>
+            <li class="checklist_item">
+              <ion-icon class="checklist_icon" name="checkmark-outline"></ion-icon>
+              <p>Flexible Cancellation</p>
+            </li>
+            <li class="checklist_item">
+              <ion-icon class="checklist_icon" name="checkmark-outline"></ion-icon>
+              <p>Unlimited Mileage</p>
+            </li>
+            <li class="checklist_item">
+              <ion-icon class="checklist_icon" name="checkmark-outline"></ion-icon>
+              <p>Taxes and Fees Excluded</p>
+            </li>
+          </ul>
+          <div class="rent_now">
+            <a href="#" class="btn btn_start_book">Rent Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Website footer section -->
+  <footer>
+    <div class="footer-container grid grid_footer">
+      <div class="logo_col">
+        <a href="#" class="footer_logo">
+          <img class="logo" alt="WheelsOnRent Logo" src="../images/edit1.png" />
+        </a>
+
+        <ul class="social_links">
+          <li>
+            <a class="footer_link" href="#"><ion-icon class="social_icon" name="logo-instagram"></ion-icon></a>
+          </li>
+          <li>
+            <a class="footer_link" href="#"><ion-icon class="social_icon" name="logo-facebook"></ion-icon></a>
+          </li>
+          <li>
+            <a class="footer_link" href="#"><ion-icon class="social_icon" name="logo-twitter"></ion-icon></a>
+          </li>
+        </ul>
+
+        <p class="copyright">
+          Copyright &copy; 2023 by WheelsOnRent, Inc. All rights reserved.
+        </p>
+      </div>
+
+      <div class="address_col">
+        <p class="footer_heading">Contact us</p>
+        <address class="contacts">
+          <p class="address">
+            18 Mid Pines Road, Toronto, Scarborough, Canada
+          </p>
+          <p>
+            <a class="footer_link" href="tel:647-551-4530">647-551-4530</a><br />
+            <a class="footer_link" href="mailto:wheelsonrent@gmail.com">WheelsOnRent</a>
+          </p>
+        </address>
+      </div>
+
+      <nav class="nav_col">
+        <p class="footer_heading">Account</p>
+        <ul class="footer_nav">
+          <li><a class="footer_link" href="#">Create account</a></li>
+          <li><a class="footer_link" href="#">Sign in</a></li>
+          <li><a class="footer_link" href="#">iOS app</a></li>
+          <li><a class="footer_link" href="#">Android app</a></li>
+        </ul>
+      </nav>
+
+      <nav class="nav_col">
+        <p class="footer_heading">Company</p>
+        <ul class="footer_nav">
+          <li><a class="footer_link" href="index.html">Home</a></li>
+          <li><a class="footer_link" href="about.html">About</a></li>
+          <li><a class="footer_link" href="offerings.html">Offerings</a></li>
+          <li><a class="footer_link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <nav class="nav_col">
+        <p class="footer_heading">Resources</p>
+        <ul class="footer_nav">
+          <li><a class="footer_link" href="#">FAQ</a></li>
+          <li><a class="footer_link" href="#">Help center</a></li>
+          <li><a class="footer_link" href="#">Privacy & terms</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+
+</html>

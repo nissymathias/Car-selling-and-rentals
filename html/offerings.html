@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta tags for defining character set and responsive behavior on different devices -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon for the website -->
+  <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+
+  <!-- Preconnect to external font resources -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Importing and applying the 'Roboto' font from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- External CSS stylesheets -->
+  <link rel="stylesheet" href="../css/general.css" /> <!-- General styles shared across the website -->
+  <link rel="stylesheet" href="../css/style.css" /> <!-- Specific styles for this website -->
+  <link rel="stylesheet" href="../css/queries.css" /> <!-- Styles for responsive design -->
+  <link rel="stylesheet" href="../css/offerings.css" /> <!-- Styles related to the services offerings section -->
+
+  <!-- Ionicons library for icons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <!-- Title of the web page -->
+  <title>WheelsOnRent</title>
+</head>
+
+<body>
+  <!-- Header section of the website -->
+  <header class="header">
+    <!-- Website logo, linked to the homepage -->
+    <a href="#">
+      <img id="logo" src="../images/canva.png" alt="WheelsOnRent Logo">
+    </a>
+
+    <!-- Main navigation menu -->
+    <nav class="main_nav">
+      <ul class="main_nav_list">
+        <li><a href="index.html" class="main_nav_link">Home</a></li>
+        <li><a href="about.html" class="main_nav_link">About</a></li>
+        <li><a href="contact.html" class="main_nav_link">Contact</a></li>
+        <li><a href="offerings.html" class="main_nav_link">Offerings</a></li>
+        <li><a href="#" class="main_nav_link btn">Booking</a></li>
+      </ul>
+    </nav>
+
+    <!-- Mobile navigation toggle button with icons -->
+    <button class="mobile_nav_btn">
+      <ion-icon class="mobile_nav_icon" name="menu-outline"></ion-icon> <!-- Icon for menu toggle -->
+      <ion-icon class="mobile_nav_icon" name="close-outline"></ion-icon> <!-- Icon for close toggle -->
+    </button>
+  </header>
+
+  <!-- Main content section -->
+  <main>
+    <!-- Services offerings section -->
+    <section class="services-section">
+      <h1 class="services-header">Services</h1> <!-- Heading for the services section -->
+      <h3 class="services-subtitle">What We Offer</h3> <!-- Subtitle for the services section -->
+      <hr class="hr-first"> <!-- Horizontal rule for visual separation -->
+
+      <!-- Container for service blocks -->
+      <div class="services-container">
+
+        <!-- Service block 1 -->
+        <div class="service-1">
+          <div class="feature">
+            <ion-icon class="feature_icon" name="arrow-redo"></ion-icon> <!-- Icon for the service feature -->
+            <p class="feature_title">One-Way Rentals</p> <!-- Title for the service feature -->
+            <p class="feature_text">
+              Go the extra mile with our one-way rental service, allowing you to drop off the car at a different
+              location
+            </p> <!-- Description for the service feature -->
+          </div>
+        </div>
+
+        <!-- Service block 2 -->
+        <div class="service-2">
+          <div class="feature">
+            <ion-icon class="feature_icon" name="call"></ion-icon> <!-- Icon for the service feature -->
+            <p class="feature_title">24/7 Customer Support</p> <!-- Title for the service feature -->
+            <p class="feature_text">
+              We're here round-the-clock to assist you with any inquiries or support you may need during your rental
+              experience
+            </p> <!-- Description for the service feature -->
+          </div>
+        </div>
+
+        <!-- Service block 3 -->
+        <div class="service-3">
+          <div class="service-2">
+            <div class="feature">
+              <ion-icon class="feature_icon" name="shield-checkmark"></ion-icon> <!-- Icon for the service feature -->
+              <p class="feature_title">Premium Insurance</p> <!-- Title for the service feature -->
+              <p class="feature_text">
+                Upgrade to our premium insurance package for added protection and reduced liability during rental
+                period
+              </p> <!-- Description for the service feature -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Service block 4 -->
+        <div class="service-4">
+          <div class="service-2">
+            <div class="feature">
+              <ion-icon class="feature_icon" name="timer"></ion-icon> <!-- Icon for the service feature -->
+              <p class="feature_title">Long Term Rentals</p> <!-- Title for the service feature -->
+              <p class="feature_text">
+                Planning an extended trip? Benefit from discounted and flexible terms with our long-term car
+                rental options
+              </p> <!-- Description for the service feature -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- products section starts  -->
+    <section class="section_products">
+      <h1 class="products-header">Products</h1>
+      <h2 class="product-subtitle">Top Car Rentals</h2>
+      <hr class="hr-first">
+
+      <!-- Container for displaying product cards in a grid layout -->
+      <div class="product-container grid grid--3-cols">
+        <div class="product">
+          <img src="../images/cars/hyundai.jpg" class="product_img" alt="Hyundai" />
+          <div class="product_content">
+            <div class="product_tags">
+              <span class="tag tag_economy">Economy</span>
+            </div>
+            <p class="product_title">Hyundai Tucson</p>
+            <ul class="product_attributes">
+              <li class="product_attribute">
+                <ion-icon class="product_icon" name="cash-outline"></ion-icon>
+                <span><strong>42 $</strong> / day</span>
+              </li>
+              <li class="product_attribute">
+                <ion-icon class="product_icon" name="people-outline"></ion-icon>
+                <span><strong>3 Adults, 3 Bags</strong></span>
+              </li>
+              <li class="product_attribute">
+                <ion-icon class="product_icon" name="star-outline"></ion-icon>
+                <span>ComfortScore <strong> 4.6</strong></span>
+              </li>
+            </ul>
+            <button class="product-button">Rent</button>
+          </div>
+        </div>
+        <div class="product">
+          <img src="../images/cars/suv.jpg" class="product_img" alt="SUV" />
+          <div class="product_content">
+            <div class="product_tags">
+              <span class="tag tag_suv">Intermediate SUV</span>
+            </div>
+            <p class="product_title">SUV</p>
+            <ul class="product_attributes">
+              <li class="product_attribute">
+                <ion-icon class="product_icon" name="cash-outline"></ion-icon>
+                <span><strong>65 $</strong> / day</span>
+              </li>
+              <li class="product_attribute">
+                <ion-icon class="product_icon" name="people-outline"></ion-icon>
+                <span><strong>5 Adults, 3 Bags</strong></span>
+              </li>
+              <li class="product_attribute">
+                <ion-icon class="product_icon" name="star-outline"></ion-icon>
+                <span>ComfortScore <strong> 4.9</strong></span>
+              </li>
+            </ul>
+            <button class="product-button">Rent</button>
+          </div>
+        </div>
+        <div class="product">
+          <img src="../images/cars/minivan.jpg" class="product_img" alt="Mini Van" />
+          <div class="product_content">
+            <div class="product_tags">
+              <span class="tag tag_minivan">Mini Van</span>
+            </div>
+            <p class="product_title">Nikon Mini Van</p>
+            <ul class="product_attributes">
+              <li class="product_attribute">
+                <ion-icon class="product_icon" name="cash-outline"></ion-icon>
+                <span><strong>95 $</strong> / day</span>
+              </li>
+              <li class="product_attribute">
+                <ion-icon class="product_icon" name="people-outline"></ion-icon>
+                <span><strong>5 Adults, 5 Bags</strong></span>
+              </li>
+              <li class="product_attribute">
+                <ion-icon class="product_icon" name="star-outline"></ion-icon>
+                <span>ComfortScore <strong> 4.4</strong></span>
+              </li>
+            </ul>
+            <button class="product-button">Rent</button>
+          </div>
+        </div>
+        <div class="product">
+          <img src="../images/cars/swift.jpg" class="product_img" alt="Economy Car" />
+          <div class="product_content">
+            <div class="product_tags">
+              <span class="tag tag_economy">Economy</span>
+            </div>
+            <p class="product_title">Suzuki Swift</p>
+            <ul class="product_attributes">
+              <li class="product_attribute">
+                <ion-icon class="product_icon" name="cash-outline"></ion-icon>
+                <span><strong>40 $</strong> / day</span>
+              </li>
+              <li class="product_attribute">
+                <ion-icon class="product_icon" name="people-outline"></ion-icon>
+                <span><strong>3 Adults, 2 Bags</strong></span>
+              </li>
+              <li class="product_attribute">
+                <ion-icon class="product_icon" name="star-outline"></ion-icon>
+                <span>ComfortScore <strong> 4.1</strong></span>
+              </li>
+            </ul>
+            <button class="product-button">Rent</button>
+          </div>
+        </div>
+        <div class="product">
+          <img src="../images/cars/malibuu.jpg" class="product_img" alt="Sports Car" />
+          <div class="product_content">
+            <div class="product_tags">
+              <span class="tag tag_sports">Sports</span>
+            </div>
+            <p class="product_title">BMW M2</p>
+            <ul class="product_attributes">
+              <li class="product_attribute">
+                <ion-icon class="product_icon" name="cash-outline"></ion-icon>
+                <span><strong>85 $</strong> / day</span>
+              </li>
+              <li class="product_attribute">
+                <ion-icon class="product_icon" name="people-outline"></ion-icon>
+                <span><strong>3 Adults, 2 Bags</strong></span>
+              </li>
+              <li class="product_attribute">
+                <ion-icon class="product_icon" name="star-outline"></ion-icon>
+                <span>ComfortScore <strong> 4.7</strong></span>
+              </li>
+            </ul>
+            <button class="product-button">Rent</button>
+          </div>
+        </div>
+        <div class="product">
+          <img src="../images/cars/tesla.jpg" class="product_img" alt="Electric Car" />
+          <div class="product_content">
+            <div class="product_tags">
+              <span class="tag tag_electric">Electric Sporty</span>
+            </div>
+            <p class="product_title">Tesla Model 3</p>
+            <ul class="product_attributes">
+              <li class="product_attribute">
+                <ion-icon class="product_icon" name="cash-outline"></ion-icon>
+                <span><strong>90 $</strong> / day</span>
+              </li>
+              <li class="product_attribute">
+                <ion-icon class="product_icon" name="people-outline"></ion-icon>
+                <span><strong>3 Adults, 2 Bags</strong></span>
+              </li>
+              <li class="product_attribute">
+                <ion-icon class="product_icon" name="star-outline"></ion-icon>
+                <span>ComfortScore <strong> 4.7</strong></span>
+              </li>
+            </ul>
+            <button class="product-button">Rent</button>
+          </div>
+        </div>
+        <!-- Additional product cards that are initially hidden -->
+        <div id="additional-cars">
+          <div class="product">
+            <img src="../images/cars/lexusrx350.jpg" class="product_img" alt="SUV" />
+            <div class="product_content">
+              <div class="product_tags">
+                <span class="tag tag_suv">Intermediate SUV</span>
+              </div>
+              <p class="product_title">Lexus RX 350</p>
+              <ul class="product_attributes">
+                <li class="product_attribute">
+                  <ion-icon class="product_icon" name="cash-outline"></ion-icon>
+                  <span><strong>70 $</strong> / day</span>
+                </li>
+                <li class="product_attribute">
+                  <ion-icon class="product_icon" name="people-outline"></ion-icon>
+                  <span><strong>4 Adults, 2 Bags</strong></span>
+                </li>
+                <li class="product_attribute">
+                  <ion-icon class="product_icon" name="star-outline"></ion-icon>
+                  <span>ComfortScore <strong> 4.8</strong></span>
+                </li>
+              </ul>
+              <button class="product-button">Rent</button>
+            </div>
+          </div>
+          <div class="product">
+            <img src="../images/cars/mercedesbenzc.jpg" class="product_img" alt="Sports Car" />
+            <div class="product_content">
+              <div class="product_tags">
+                <span class="tag tag_sports">Sporty</span>
+              </div>
+              <p class="product_title">Mercedes Benz C</p>
+              <ul class="product_attributes">
+                <li class="product_attribute">
+                  <ion-icon class="product_icon" name="cash-outline"></ion-icon>
+                  <span><strong>90 $</strong> / day</span>
+                </li>
+                <li class="product_attribute">
+                  <ion-icon class="product_icon" name="people-outline"></ion-icon>
+                  <span><strong>4 Adults, 2 Bags</strong></span>
+                </li>
+                <li class="product_attribute">
+                  <ion-icon class="product_icon" name="star-outline"></ion-icon>
+                  <span>ComfortScore <strong> 4.5</strong></span>
+                </li>
+              </ul>
+              <button class="product-button">Rent</button>
+            </div>
+          </div>
+          <div class="product">
+            <img src="../images/cars/audia4.jpg" class="product_img" alt="Sedan" />
+            <div class="product_content">
+              <div class="product_tags">
+                <span class="tag tag_sedan">Sedan</span>
+              </div>
+              <p class="product_title">Audi A4</p>
+              <ul class="product_attributes">
+                <li class="product_attribute">
+                  <ion-icon class="product_icon" name="cash-outline"></ion-icon>
+                  <span><strong>75 $</strong> / day</span>
+                </li>
+                <li class="product_attribute">
+                  <ion-icon class="product_icon" name="people-outline"></ion-icon>
+                  <span><strong>4 Adults, 2 Bags</strong></span>
+                </li>
+                <li class="product_attribute">
+                  <ion-icon class="product_icon" name="star-outline"></ion-icon>
+                  <span>ComfortScore <strong> 4.5</strong></span>
+                </li>
+              </ul>
+              <button class="product-button">Rent</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Container for the "See all products" link -->
+      <div class="container all_products">
+        <!-- Link to display additional product cards -->
+        <a href="#additional-cars" class="link" id="see-all-link">See all products &rarr;</a>
+      </div>
+    </section>
+    <!-- products section ends -->
+
+    <section class="bottom-main">
+      <div class="bottom-left">
+        <h1 style="letter-spacing: 2px;">What Are You Waiting For? </h1>
+      </div>
+      <div class="bottom-right">
+        <button class="button-right">Rent Now</button>
+      </div>
+    </section>
+  </main>
+  <!-- main section ends -->
+
+  <!-- footer section starts -->
+  <footer>
+    <div class="footer-container grid grid_footer">
+
+      <!-- Logo column -->
+      <div class="logo_col">
+        <!-- Company logo with a link to the homepage -->
+        <a href="#" class="footer_logo">
+          <img class="logo" alt="WheelsOnRent Logo" src="../images/edit1.png" />
+        </a>
+
+        <!-- Social media links -->
+        <ul class="social_links">
+          <!-- Instagram link -->
+          <li>
+            <a class="footer_link" href="#"><ion-icon class="social_icon" name="logo-instagram"></ion-icon></a>
+          </li>
+          <!-- Facebook link -->
+          <li>
+            <a class="footer_link" href="#"><ion-icon class="social_icon" name="logo-facebook"></ion-icon></a>
+          </li>
+          <!-- Twitter link -->
+          <li>
+            <a class="footer_link" href="#"><ion-icon class="social_icon" name="logo-twitter"></ion-icon></a>
+          </li>
+        </ul>
+
+        <!-- Copyright notice -->
+        <p class="copyright">
+          Copyright &copy; 2023 by WheelsOnRent, Inc. All rights reserved.
+        </p>
+      </div>
+
+      <!-- Address column -->
+      <div class="address_col">
+        <!-- Heading for the contact information -->
+        <p class="footer_heading">Contact us</p>
+        <!-- Company contact details -->
+        <address class="contacts">
+          <p class="address">
+            18 Mid Pines Road, Toronto, Scarborough, Canada
+          </p>
+          <p>
+            <!-- Phone number link -->
+            <a class="footer_link" href="tel:647-551-4530">647-551-4530</a><br />
+            <!-- Email link -->
+            <a class="footer_link" href="mailto:wheelsonrent@gmail.com">WheelsOnRent</a>
+          </p>
+        </address>
+      </div>
+
+      <!-- Navigation column for Account links -->
+      <nav class="nav_col">
+        <!-- Heading for the Account links -->
+        <p class="footer_heading">Account</p>
+        <!-- List of Account-related links -->
+        <ul class="footer_nav">
+          <li><a class="footer_link" href="#">Create account</a></li>
+          <li><a class="footer_link" href="#">Sign in</a></li>
+          <li><a class="footer_link" href="#">iOS app</a></li>
+          <li><a class="footer_link" href="#">Android app</a></li>
+        </ul>
+      </nav>
+
+      <!-- Navigation column for Company links -->
+      <nav class="nav_col">
+        <!-- Heading for the Company links -->
+        <p class="footer_heading">Company</p>
+        <!-- List of Company-related links -->
+        <ul class="footer_nav">
+          <li><a class="footer_link" href="index.html">Home</a></li>
+          <li><a class="footer_link" href="about.html">About</a></li>
+          <li><a class="footer_link" href="offerings.html">Offerings</a></li>
+          <li><a class="footer_link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Navigation column for Resources links -->
+      <nav class="nav_col">
+        <!-- Heading for the Resources links -->
+        <p class="footer_heading">Resources</p>
+        <!-- List of Resources-related links -->
+        <ul class="footer_nav">
+          <li><a class="footer_link" href="#">FAQ</a></li>
+          <li><a class="footer_link" href="#">Help center</a></li>
+          <li><a class="footer_link" href="#">Privacy & terms</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,687 @@
+/* BELOW 1344px (Smaller desktops) */
+@media screen and (max-width: 1344px) and (min-width:1201px) {
+  .sec {
+    max-width: 120rem;
+  }
+
+  .primary_heading {
+    font-size: 4.4rem;
+  }
+}
+
+/* BELOW 1200px (Landscape Tablets) */
+
+@media screen and (max-width: 1200px) and (min-width:945px) {
+  html {
+    /* 9px / 16px  */
+    font-size: 56.25%;
+  }
+
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+
+  .primary_heading {
+    font-size: 3.8rem;
+  }
+
+  .secondary_heading {
+    font-size: 3.6rem;
+  }
+
+  .sec {
+    gap: 4.8rem;
+  }
+
+  .main_nav_link {
+    gap: 3.2rem;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+}
+
+/* BELOW 944px (Tablets) */
+@media screen and (max-width: 944px) and (min-width:768px) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .package_plan {
+    width: 100%;
+  }
+
+  .sec {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+
+  .sec_text_box,
+  .sec_img_box {
+    text-align: center;
+  }
+
+  .section_description {
+    font-size: 3rem;
+  }
+
+  .btn {
+    font-size: 3rem !important;
+  }
+
+  .rented_cars {
+    justify-content: center;
+    margin-top: 3.2rem;
+    font-size: 3rem;
+  }
+
+  .rented_text {
+    font-size: 3.8rem;
+  }
+
+  .feature_title {
+    font-size: 3.2rem;
+  }
+
+  .feature_text {
+    font-size: 2.4rem;
+  }
+
+  /* MOBILE NAVIGATION */
+
+  /* Style for the mobile navigation button */
+  .mobile_nav_btn {
+    display: block;
+  }
+
+  /* Styling for the main navigation container */
+  .main_nav {
+    background-color: rgba(255, 255, 255, 0.97);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  /* When the navigation is open, make it visible */
+  .nav-open .main_nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  /* Show the close icon when the navigation is open */
+  .nav-open .mobile_nav_icon[name="close-outline"] {
+    display: block;
+  }
+
+  /* Hide the menu icon when the navigation is open */
+  .nav-open .mobile_nav_icon[name="menu-outline"] {
+    display: none;
+  }
+
+  /* Style for the links in the main navigation */
+  .main_nav_link {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  /* Set font size for main navigation links */
+  .main_nav_link:link,
+  .main_nav_link:visited {
+    font-size: 3rem;
+  }
+
+
+  /* product and services (offerings page) Sujan Gautam */
+  /* Set grid template columns for the services container */
+  .services-container {
+    grid-template-columns: auto auto !important;
+  }
+
+  /* Adjust padding and font size for the services title */
+  .services-title {
+    padding: 10px !important;
+    font-size: 4rem !important;
+  }
+
+  /* Adjust font size for the services subtitle */
+  .services-subtitle {
+    font-size: 2rem !important;
+  }
+
+  /* Adjust padding for the section containing products */
+  .section_products {
+    padding: 15px !important;
+  }
+
+  /* Adjust padding for the header of the products section */
+  .products-header {
+    padding: 10px !important;
+  }
+
+  /* Set grid template columns for the product containers */
+  .product-container {
+    grid-template-columns: auto auto !important;
+  }
+
+  /* Remove padding for the bottom main section */
+  .bottom-main {
+    padding: 0px;
+  }
+
+  /* Adjust padding for the bottom right section */
+  .bottom-right {
+    padding: 3px;
+  }
+
+  /* Table styles */
+
+  /* Remove borders from the table */
+  table {
+    border: 0;
+  }
+
+  /* Hide the table header */
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  /* Style for table rows */
+  table tr {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    margin-bottom: 1em;
+  }
+
+  /* Style for table cells */
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 2.5rem;
+    text-align: right;
+  }
+
+  /* Show table cell labels */
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  /* Remove bottom border from the last table cell */
+  table td:last-child {
+    border-bottom: 0;
+  }
+
+
+  /* about us page nissy */
+  .text p {
+    padding: 0 5rem;
+    text-align: justify;
+  }
+
+  .team .team_member {
+    max-width: 100%;
+  }
+}
+
+/* BELOW 704px (Smaller tablets) */
+@media screen and (max-width: 704px) and (min-width: 545px) {
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .secondary_heading {
+    margin-bottom: 4.8rem;
+  }
+
+  .grid_footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .logo_col,
+  .address_col {
+    grid-column: span 3;
+  }
+
+  .nav_col {
+    grid-row: 1;
+    grid-column: span 2;
+    margin-bottom: 3.2rem;
+  }
+
+  .package_plan {
+    width: 100%;
+  }
+
+  .mobile_nav_btn {
+    display: block;
+  }
+
+  .main_nav {
+    background-color: rgba(255, 255, 255, 0.97);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .main_nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .mobile_nav_icon[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .mobile_nav_icon[name="menu-outline"] {
+    display: none;
+  }
+
+  .main_nav_link {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main_nav_link:link,
+  .main_nav_link:visited {
+    font-size: 3rem;
+  }
+
+  /* product and services offerings */
+  .services-container {
+    grid-template-columns: auto auto;
+  }
+
+  .services-title {
+    padding: 10px;
+    font-size: 4rem;
+
+  }
+
+  .services-subtitle {
+    font-size: 2rem;
+  }
+
+  .section_products {
+    padding: 15px !important;
+  }
+
+  .products-header {
+    padding: 10px !important;
+  }
+
+  .product-container {
+    grid-template-columns: auto auto !important;
+  }
+
+  .bottom-main {
+    padding: 0px;
+  }
+
+  /* about us page nissy */
+  .text p {
+    padding: 0 5rem;
+    text-align: justify;
+  }
+
+  .team .team_member {
+    max-width: 100%;
+  }
+}
+
+/* BELOW 544px (Phones) */
+@media (max-width: 544px) {
+  .grid {
+    row-gap: 4.8rem;
+  }
+
+  .grid--2-cols,
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .container.grid--3-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .package_plan {
+    width: 100%;
+  }
+
+  .primary_heading {
+    font-size: 3.2rem;
+  }
+
+  .sec {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 5rem;
+  }
+
+  .sec_img_box {
+    text-align: center;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem;
+  }
+
+  .main_section {
+    padding: 2.4rem 0 2.4rem 0;
+  }
+
+  .mobile_nav_btn {
+    display: block;
+  }
+
+  .main_nav {
+    background-color: rgba(255, 255, 255, 0.97);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .main_nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .mobile_nav_icon[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .mobile_nav_icon[name="menu-outline"] {
+    display: none;
+  }
+
+  .main_nav_link {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main_nav_link:link,
+  .main_nav_link:visited {
+    font-size: 3rem;
+  }
+
+  .grid--4-cols {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .sec {
+    padding: 0 3.2rem;
+  }
+
+  .sec_images {
+    width: 100%;
+  }
+
+  .sec_image {
+    width: 80%;
+  }
+
+  .services-header {
+    font-size: 5.5rem !important;
+  }
+
+  .services-subtitle {
+    font-size: 2.6rem !important;
+  }
+
+  .hr-first {
+    width: 100px !important;
+  }
+
+  .services-container {
+    grid-template-columns: auto !important;
+  }
+
+  .feature_title {
+    font-size: 3.4rem !important;
+  }
+
+  .feature_text {
+    font-size: 2.8rem !important;
+  }
+
+  .products-header {
+    font-size: 4.5rem !important;
+  }
+
+  .product-subtitle {
+    font-size: 2.6rem !important;
+  }
+
+  .product-container {
+    grid-template-columns: auto !important;
+  }
+
+  .tag_economy {
+    font-size: 2rem !important;
+  }
+
+  .tag_suv {
+    font-size: 2rem !important;
+  }
+
+  .tag_minivan {
+    font-size: 2rem !important;
+  }
+
+  .tag_sports {
+    font-size: 2rem !important;
+  }
+
+  .tag_electric {
+    font-size: 2rem !important;
+  }
+
+  .tag_sedan {
+    font-size: 2rem !important;
+  }
+
+  .product_attribute {
+    font-size: 2.2rem !important;
+  }
+
+  .product-button {
+    font-size: 2.6rem;
+  }
+
+  .all_products {
+    font-size: 2.4rem !important;
+  }
+
+  .bottom-main {
+    padding: 0px !important;
+  }
+
+  .bottom-right {
+    padding: 47px !important;
+  }
+
+  .grid_footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .logo_col,
+  .address_col {
+    grid-column: span 3;
+  }
+
+  .nav_col {
+    grid-row: 1;
+    grid-column: span 2;
+    margin-bottom: 3.2rem;
+  }
+
+  table {
+    border: 0;
+  }
+
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  table tr {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    margin-bottom: 1em;
+  }
+
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 1.5rem;
+    text-align: right;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+
+  /* kalgi contact page responsive */
+
+  /* This rule targets the left-side element inside the .content class within the .containerr class.
+   It sets its width and height to 100% and reorders it to appear after other elements.
+   It also changes its display to flex with a column direction, adds a margin at the bottom, and aligns items normally. */
+  .containerr .content .left-side {
+    width: 100%;
+    height: 100%;
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    align-items: normal;
+  }
+
+  /* This rule targets the right-side element inside the .content class within the .containerr class.
+   It sets its width to 100% and removes any margins. */
+  .containerr .content .right-side {
+    width: 100%;
+    margin: 0;
+  }
+
+  /* This rule targets the pseudo-element ::before of the .left-side element inside the .content class within the .containerr class.
+   It hides the pseudo-element. */
+  .containerr .content .left-side::before {
+    display: none;
+  }
+
+  /* This rule targets the .content class within the .containerr class.
+   It sets its display to flex with a column direction. */
+  .containerr .content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* This rule targets the elements with class text-one and text-two inside the .details class, which is inside the .left-side class within the .content class.
+   It sets the font size and padding for these elements. */
+  .content .left-side .details .text-one,
+  .content .left-side .details .text-two {
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  /* This rule targets elements with class flex-items inside the .contact-container class.
+   It sets their display to block and centers the text inside them. */
+  .contact-container .flex-items {
+    display: block;
+    text-align: center;
+  }
+
+  /* This rule targets elements with class faq-left-img.
+   It sets their width to 100%. */
+  .faq-left-img {
+    width: 100%;
+  }
+
+  /* faq page */
+  .faqs-p {
+    width: 100%;
+  }
+
+  /* about us page nissy */
+  /* Example padding adjustment for this breakpoint on tablets, laptops, and small desktop monitors */
+  .text p {
+    padding: 0 2rem;
+    text-align: justify;
+  }
+
+  /* Setting the maximum width of team member cards to 100% for responsive display */
+  .team .team_member {
+    max-width: 100%;
+  }
+
+
+}

@@ -1,0 +1,274 @@
+/* SERVICES SECTION */
+/* 
+  GRID TEMPLATE COLUMNS EXPLANATION:
+
+  1. grid-template-columns: repeat(2, 1fr);
+
+  This rule creates a grid with two columns of equal width (1fr each). 
+  The 'repeat' function simplifies the definition by repeating the specified value for the given number of columns. 
+  In this case, 'repeat(2, 1fr)' means there are two columns, and each column will take an equal portion of the available horizontal space. 
+  The '1fr' unit stands for "fraction," which distributes the available space equally among the columns.
+  This grid layout is ideal for creating a simple two-column structure where both columns have the same width, 
+  making it easy to display content side by side, such as a two-column layout for product features or services.
+
+  2. grid-template-columns: auto auto auto auto;
+
+  This rule creates a grid with four columns, and each column will be automatically sized based on its content (the width of the content inside each column). 
+  The 'auto' value tells the grid to size the columns dynamically, depending on the content they contain. 
+  This means each column will be as wide as its content requires.
+  Using 'auto' for grid-template-columns is useful when you want the columns to adapt their width to the content inside them, 
+  making it suitable for scenarios where the content width varies for each column, such as a list of items with different lengths of text or images.
+
+  Both grid layouts provide flexibility and responsiveness, 
+  but they differ in how they handle column sizing: the first one assigns equal width to all columns, while the second one adapts the width based on the content.
+*/
+
+/* Styling for the services section container */
+.services-section {
+  background-color: #fdf2e9;
+  text-align: center;
+  padding: 15px 50px;
+}
+
+/* Styling for the header in the services section */
+.services-header {
+  font-size: 3.5rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+/* Styling for the horizontal line separator in the services section */
+.hr-first {
+  width: 50px;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Container for services items using CSS grid */
+.services-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 50px 25px;
+  padding: 20px 0px;
+}
+
+/* Styling for the subtitle in the services section */
+.services-subtitle {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #cf711f;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+}
+
+/* Bottom section in the services section */
+.bottom-main {
+  background-color: #fdf2e9;
+  padding: 40px 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+/* Styling for the left side content in the bottom section */
+.bottom-left {
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 15px 15px;
+}
+
+/* Styling for the right side button in the bottom section */
+.button-right {
+  background-color: white;
+  color: #e6a32d;
+  border: 1px solid #e6a32d;
+  padding: 15px 25px;
+  border-radius: 0.25rem;
+}
+
+/* Hover effect for the right side button in the bottom section */
+.button-right:hover {
+  background-color: #e6a32d;
+  color: white;
+  cursor: pointer;
+}
+
+
+/* PRODUCTS SECTION */
+
+/* Styling for the products section container */
+.section_products {
+  padding: 15px 50px;
+  text-align: center;
+}
+
+/* Styling for the products header (main heading) in the products section */
+.products-header {
+  font-size: 3.5rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+/* Styling for the subtitle in the products section */
+.product-subtitle {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #cf711f;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+}
+
+/* Container for product items using CSS grid */
+.product-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 50px 25px;
+  padding: 20px 0px;
+}
+
+/* Styling for each individual product card */
+.product {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+
+/* Hover effect for product cards */
+.product:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+/* Styling for the content inside a product card */
+.product_content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+/* Styling for the product tags displayed on the product cards */
+.product_tags {
+  margin-bottom: 1.2rem;
+  display: flex;
+  gap: 0.4rem;
+}
+
+/* Styling for each individual product tag */
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #333;
+  border-radius: 100px;
+  font-weight: 600;
+}
+
+/* Specific styling for certain product tags based on their class */
+.tag_economy {
+  background-color: #bbaaea;
+}
+
+.tag_suv {
+  background-color: #efdccc;
+}
+
+.tag_minivan {
+  background-color: #e6a32d;
+}
+
+.tag_sports {
+  background-color: #04d3b8;
+}
+
+.tag_electric {
+  background-color: #2dd30494;
+}
+
+.tag_sedan {
+  background-color: #d3150494;
+}
+
+/* Styling for the product title */
+.product_title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+  letter-spacing: 2px;
+  text-align: left;
+}
+
+/* Styling for the product attributes list */
+.product_attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Styling for each individual product attribute list */
+.product_attribute {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+/* Styling for the product icon displayed with the attribute */
+.product_icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #e67e22;
+}
+
+/* Styling for the product image */
+.product_img {
+  width: 100%;
+  max-height: 305px;
+}
+
+/* Styling for the link to view all products */
+.all_products {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+/* Styling for the link styles (visited and unvisited) */
+.link:link,
+.link:visited {
+  margin-top: 2rem;
+  display: inline-block;
+  color: #e67e22;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 0.3s;
+}
+
+/* Styling for the button on product cards */
+.product-button {
+  border: 1px solid #e6a32d;
+  padding: 10px 10px;
+  cursor: pointer;
+  width: 90px;
+  border-radius: 5px;
+  background-color: #e6a32d;
+  color: white;
+  margin-top: 15px;
+}
+
+/* Additional CSS for hiding and showing additional cars when the link is targeted */
+/* Initially hide the additional cars */
+#additional-cars {
+  display: none;
+}
+
+/* Show the additional cars when the link is targeted */
+#additional-cars:target {
+  display: contents;
+}

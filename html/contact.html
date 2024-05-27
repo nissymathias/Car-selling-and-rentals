@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta tags for character set and viewport -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Link to the favicon (website icon) -->
+  <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+
+  <!-- Preconnect links for using Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Link to the Roboto font from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- Links to different CSS files -->
+  <link rel="stylesheet" href="../css/general.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/queries.css" />
+
+  <!-- Script to load ionicons for modern browsers -->
+  <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+
+  <!-- Script to load ionicons for older browsers -->
+  <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+
+  <!-- Title of the web page -->
+  <title>WheelsOnRent</title>
+</head>
+
+<body>
+  <!-- Header section -->
+  <header class="header">
+    <!-- Logo image link -->
+    <a href="#">
+      <img id="logo" src="../images/canva.png" alt="WheelsOnRent Logo">
+    </a>
+    <!-- Main navigation menu -->
+    <nav class="main_nav">
+      <ul class="main_nav_list">
+        <li><a href="index.html" class="main_nav_link">Home</a></li>
+        <li><a href="about.html" class="main_nav_link">About</a></li>
+        <li><a href="contact.html" class="main_nav_link">Contact</a></li>
+        <li><a href="offerings.html" class="main_nav_link">Offerings</a></li>
+        <li><a href="#" class="main_nav_link btn">Booking</a></li>
+      </ul>
+    </nav>
+    <!-- Mobile navigation button -->
+    <button class="mobile_nav_btn">
+      <ion-icon class="mobile_nav_icon" name="menu-outline"></ion-icon>
+      <ion-icon class="mobile_nav_icon" name="close-outline"></ion-icon>
+    </button>
+  </header>
+
+  <!-- Main content section -->
+  <main>
+    <!-- Contact container -->
+    <div class="contact-container">
+      <!-- Container for contact details -->
+      <div class="containerr">
+        <!-- Content in the container -->
+        <div class="content">
+          <!-- Left side with address, phone, and email details -->
+          <div class="left-side">
+            <!-- Address details -->
+            <div class="address details">
+              <ion-icon name="navigate" class="topic-text-locate"></ion-icon>
+              <div class="topic">Address</div>
+              <div class="text-one">18 Mid Pines Road</div>
+              <div class="text-two">Toronto, Scarborough, Canada</div>
+            </div>
+            <!-- Phone details -->
+            <div class="phone details">
+              <ion-icon name="call" class="topic-text-locate"></ion-icon>
+              <div class="topic">Phone</div>
+              <div class="text-one">+1 234 456 7890</div>
+              <div class="text-two">+1 222 222 2222</div>
+            </div>
+            <!-- Email details -->
+            <div class="email details">
+              <ion-icon name="mail" class="topic-text-locate"></ion-icon>
+              <div class="topic">Email</div>
+              <div class="text-one">WheelsOnRent@gmail.com</div>
+              <div class="text-two">WheelsOnRent@outlook.com</div>
+            </div>
+          </div>
+          <!-- Right side with the message form -->
+          <div class="right-side">
+            <div class="topic-text">Send us a message</div>
+            <p class="sub-heading2">Whether you're curious about features, a trial, or reservations - We're ready to
+              answer
+              any and all questions</p>
+            <form action="#">
+              <!-- Input boxes for name, email, and message -->
+              <div class="input-box">
+                <input type="text" placeholder="Enter your name" required />
+              </div>
+              <div class="input-box">
+                <input type="email" placeholder="Enter your email" required />
+              </div>
+              <div class="input-box message-box">
+                <textarea placeholder="Enter your message" required></textarea>
+              </div>
+              <!-- Send button -->
+              <div class="button">
+                <input type="submit" class='sendnow' value="Send Now" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Container for Google Maps and hours of operation -->
+      <div class="containerr">
+        <!-- Google Maps embed -->
+        <div class="topic-text-locate"><ion-icon name="navigate"></ion-icon> Locate Us</div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11523.924681330716!2d-79.3361142!3d43.7732497!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d3bca1a3f78f%3A0x815365ed6c3b957e!2sLambton%20College%20In%20Toronto!5e0!3m2!1sen!2sca!4v1690395308393!5m2!1sen!2sca"
+          width='100%' height='50%' style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!-- Hours of operation -->
+        <div class="topic-text-locate" style="margin-top: 20px;"><ion-icon name="time"></ion-icon> Hours of Operation
+          <p class="operating">Tuesday - Friday 10:00AM to 5:00PM</p>
+          <p class="operating">Saturday - Sunday 09:00AM to 6:00PM</p>
+          <p class="operating">Monday Closed</p>
+        </div>
+      </div>
+      <!-- Container for FAQ section -->
+      <div class="containerr flex-items">
+        <!-- Left image for FAQ section -->
+        <div class="faq-left-img">
+          <img src="../images/customers/confused.jpg" width='100%' alt="cars in the showroom">
+        </div>
+        <!-- Right section for FAQ text -->
+        <div class="sec_text_box">
+          <!-- Primary heading for the FAQ section -->
+          <h1 class="primary_heading">
+            <span>F</span>requently <span>A</span>sked <span>Q</span>uestions!
+            <br>
+          </h1>
+          <!-- Secondary heading for the FAQ section -->
+          <h2>This FAQ Section answers the most frequently asked questions of our users</h2>
+          <br>
+          <!-- Button to go to the FAQs page -->
+          <a href="faqs.html" class="btn btn_start_book" style="margin-top: 20px;">Checkout FAQs</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer section -->
+  <footer>
+    <!-- Footer container with grid layout -->
+    <div class="footer-container grid grid_footer">
+      <!-- Column for logo and social links -->
+      <div class="logo_col">
+        <a href="#" class="footer_logo">
+          <img class="logo" alt="WheelsOnRent Logo" src="../images/edit1.png" />
+        </a>
+        <!-- Social links -->
+        <ul class="social_links">
+          <li>
+            <a class="footer_link" href="#"><ion-icon class="social_icon" name="logo-instagram"></ion-icon></a>
+          </li>
+          <li>
+            <a class="footer_link" href="#"><ion-icon class="social_icon" name="logo-facebook"></ion-icon></a>
+          </li>
+          <li>
+            <a class="footer_link" href="#"><ion-icon class="social_icon" name="logo-twitter"></ion-icon></a>
+          </li>
+        </ul>
+        <!-- Copyright text -->
+        <p class="copyright">
+          Copyright &copy; 2023 by WheelsOnRent, Inc. All rights reserved.
+        </p>
+      </div>
+
+      <!-- Column for address and contact details -->
+      <div class="address_col">
+        <p class="footer_heading">Contact us</p>
+        <address class="contacts">
+          <p class="address">
+            18 Mid Pines Road, Toronto, Scarborough, Canada
+          </p>
+          <p>
+            <a class="footer_link" href="tel:647-551-4530">647-551-4530</a><br />
+            <a class="footer_link" href="mailto:wheelsonrent@gmail.com">WheelsOnRent</a>
+          </p>
+        </address>
+      </div>
+
+      <!-- Column for account links -->
+      <nav class="nav_col">
+        <p class="footer_heading">Account</p>
+        <ul class="footer_nav">
+          <li><a class="footer_link" href="#">Create account</a></li>
+          <li><a class="footer_link" href="#">Sign in</a></li>
+          <li><a class="footer_link" href="#">iOS app</a></li>
+          <li><a class="footer_link" href="#">Android app</a></li>
+        </ul>
+      </nav>
+
+      <!-- Column for company links -->
+      <nav class="nav_col">
+        <p class="footer_heading">Company</p>
+        <ul class="footer_nav">
+          <li><a class="footer_link" href="index.html">Home</a></li>
+          <li><a class="footer_link" href="about.html">About</a></li>
+          <li><a class="footer_link" href="offerings.html">Offerings</a></li>
+          <li><a class="footer_link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Column for resource links -->
+      <nav class="nav_col">
+        <p class="footer_heading">Resources</p>
+        <ul class="footer_nav">
+          <li><a class="footer_link" href="#">FAQ</a></li>
+          <li><a class="footer_link" href="#">Help center</a></li>
+          <li><a class="footer_link" href="#">Privacy & terms</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+
+</html>
